@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Abdiaziz Web Solutions | Professional Websites in Garissa, Kenya</title>
+
+  <meta name="description"
+        content="Abdiaziz Web Solutions creates professional websites, digital menus and QR-code solutions for businesses in Garissa and across Kenya.">
+
+  <meta name="keywords"
+        content="web design Garissa, websites Garissa, Kenya web developer, digital menu Garissa, QR code Kenya, Abdiaziz Web Solutions">
+
+  <meta name="theme-color" content="#07111f">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8fafc;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7, 17, 31, 0.96);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 5px 25px rgba(0,0,0,.15);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: white;
+    }
+
+    .logo span {
+      color: #38bdf8;
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      font-size: .92rem;
+      font-weight: 700;
+      transition: .3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* HERO */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      color: white;
+      padding: 100px 0 90px;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(56,189,248,.25), transparent 30%),
+        linear-gradient(135deg, #07111f, #102642 55%, #075985);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid rgba(255,255,255,.2);
+      background: rgba(255,255,255,.08);
+      border-radius: 50px;
+      font-size: .85rem;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 7vw, 5rem);
+      line-height: 1;
+      letter-spacing: -2px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero-text {
+      color: #dbeafe;
+      font-size: 1.12rem;
+      max-width: 680px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 20px;
+      border-radius: 10px;
+      font-weight: 800;
+      transition: .3s;
+    }
+
+    .btn-primary {
+      background: #25d366;
+      color: #062b12;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(37,211,102,.25);
+    }
+
+    .btn-dark {
+      background: #07111f;
+      color: white;
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,.35);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: #07111f;
+    }
+
+    /* HERO CARD */
+
+    .hero-card {
+      padding: 30px;
+      border-radius: 24px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.18);
+      box-shadow: 0 20px 50px rgba(0,0,0,.15);
+    }
+
+    .hero-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+    }
+
+    .hero-card li {
+      list-style: none;
+      padding: 9px 0;
+      color: #e2e8f0;
+    }
+
+    .hero-card li::before {
+      content: "✓";
+      color: #38bdf8;
+      font-weight: 900;
+      margin-right: 10px;
+    }
+
+    /* GENERAL */
+
+    section {
+      padding: 85px 0;
+    }
+
+    .section-head {
+      max-width: 700px;
+      margin: 0 auto 45px;
+      text-align: center;
+    }
+
+    .section-head h2 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      margin-bottom: 12px;
+    }
+
+    .section-head p {
+      color: #64748b;
+    }
+
+    /* SERVICES */
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 27px;
+      box-shadow: 0 10px 30px rgba(15,23,42,.06);
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(15,23,42,.1);
+    }
+
+    .icon {
+      width: 55px;
+      height: 55px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: #e0f2fe;
+      font-size: 1.8rem;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #64748b;
+    }
+
+    /* PACKAGES */
+
+    .pricing {
+      background: #f1f5f9;
+    }
+
+    .price {
+      font-size: 2.2rem;
+      font-weight: 900;
+      margin: 12px 0;
+    }
+
+    .price small {
+      font-size: .85rem;
+      color: #64748b;
+    }
+
+    .package-list {
+      margin: 20px 0;
+    }
+
+    .package-list li {
+      list-style: none;
+      margin: 10px 0;
+      color: #475569;
+    }
+
+    .package-list li::before {
+      content: "✓";
+      font-weight: 900;
+      margin-right: 9px;
+    }
+
+    .popular {
+      border: 2px solid #38bdf8;
+      position: relative;
+      transform: translateY(-8px);
+    }
+
+    .popular-label {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: #38bdf8;
+      color: #06243a;
+      font-size: .68rem;
+      font-weight: 900;
+      padding: 6px 9px;
+      border-radius: 6px;
+    }
+
+    /* WHY US */
+
+    .why {
+      background: white;
+    }
+
+    .why-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .why-item {
+      display: flex;
+      gap: 15px;
+      padding: 22px;
+      border-radius: 15px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+    }
+
+    .why-number {
+      min-width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #07111f;
+      color: white;
+      font-weight: 900;
+    }
+
+    /* PORTFOLIO */
+
+    .portfolio {
+      background: #eef4f8;
+    }
+
+    .project {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .mockup {
+      height: 190px;
+      display: grid;
+      place-items: center;
+      font-size: 4rem;
+      background: linear-gradient(135deg,#dbeafe,#e0f2fe);
+    }
+
+    .project-body {
+      padding: 24px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 5px 10px;
+      border-radius: 50px;
+      font-size: .72rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    /* STEPS */
+
+    .number {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      background: #07111f;
+      color: white;
+      font-weight: 900;
+    }
+
+    .steps {
+      text-align: center;
+    }
+
+    /* TESTIMONIALS */
+
+    .testimonials {
+      background: white;
+    }
+
+    .quote {
+      font-size: 1.05rem;
+      color: #475569;
+      margin-bottom: 18px;
+    }
+
+    .stars {
+      color: #f59e0b;
+      margin-bottom: 12px;
+    }
+
+    /* ABOUT */
+
+    .about {
+      background: #07111f;
+      color: white;
+    }
+
+    .about .section-head p {
+      color: #cbd5e1;
+    }
+
+    .about .card p {
+      color: #64748b;
+    }
+
+    /* SERVICE AREA */
+
+    .location-section {
+      background: #f1f5f9;
+    }
+
+    .location-box {
+      background: white;
+      border-radius: 22px;
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: center;
+      box-shadow: 0 15px 45px rgba(0,0,0,.07);
+    }
+
+    .location-info h3 {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
+
+    .location-info p {
+      color: #64748b;
+      margin-bottom: 20px;
+    }
+
+    .location-card {
+      padding: 22px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    .location-card strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .location-card span {
+      color: #64748b;
+    }
+
+    .map-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #07111f;
+      color: white;
+      padding: 14px 20px;
+      border-radius: 10px;
+      font-weight: 800;
+      transition: .3s;
+    }
+
+    .map-button:hover {
+      background: #075985;
+      transform: translateY(-2px);
+    }
+
+    .map-visual {
+      min-height: 260px;
+      border-radius: 18px;
+      background:
+        linear-gradient(rgba(14,165,233,.08),rgba(14,165,233,.08)),
+        repeating-linear-gradient(
+          45deg,
+          #e2e8f0 0,
+          #e2e8f0 2px,
+          transparent 2px,
+          transparent 35px
+        );
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 30px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .map-pin {
+      font-size: 4rem;
+      margin-bottom: 8px;
+    }
+
+    .map-visual h3 {
+      margin-bottom: 5px;
+    }
+
+    .map-visual p {
+      color: #64748b;
+    }
+
+    /* CONTACT */
+
+    .contact-box {
+      background: white;
+      border-radius: 22px;
+      padding: 38px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      box-shadow: 0 15px 45px rgba(0,0,0,.08);
+    }
+
+    .contact-item {
+      padding: 15px 0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .contact-item strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .contact-item span {
+      color: #64748b;
+    }
+
+    .qr {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 240px;
+      background: #f8fafc;
+      border-radius: 16px;
+      text-align: center;
+    }
+
+    .qr img {
+      width: 190px;
+      height: 190px;
+      margin: auto;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #030811;
+      color: #94a3b8;
+      text-align: center;
+      padding: 35px 0;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    /* FLOATING WHATSAPP */
+
+    .float-wa {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #25d366;
+      color: #062b12;
+      font-size: 1.7rem;
+      font-weight: 900;
+      box-shadow: 0 10px 25px rgba(0,0,0,.25);
+      z-index: 200;
+    }
+
+    .float-wa:hover {
+      transform: scale(1.08);
+    }
+
+    /* MOBILE */
+
+    @media(max-width:800px) {
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding: 70px 0;
+      }
+
+      .hero-grid,
+      .contact-box,
+      .why-box,
+      .location-box {
+        grid-template-columns: 1fr;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .popular {
+        transform: none;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      h1 {
+        letter-spacing: -1px;
+      }
+
+      .buttons {
+        flex-direction: column;
+      }
+
+      .btn,
+      .map-button {
+        width: 100%;
+      }
+
+      .hero-card {
+        margin-top: 10px;
+      }
+
+      .location-box {
+        padding: 25px;
+      }
+
+      .contact-box {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+
+    <a href="#home" class="logo">
+      Abdiaziz <span>Web Solutions</span>
+    </a>
+
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#portfolio">Our Work</a>
+      <a href="#about">About</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<main id="home">
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container hero-grid">
+
+      <div>
+
+        <span class="badge">
+          🇰🇪 Garissa, Kenya • Serving businesses across Kenya
+        </span>
+
+        <h1>
+          Your Business Deserves
+          <span>a Professional Website.</span>
+        </h1>
+
+        <p class="hero-text">
+          Abdiaziz Web Solutions creates modern websites, digital menus
+          and QR-code solutions that help businesses look professional,
+          build trust and make it easier for customers to contact them.
+        </p>
+
+        <div class="buttons">
+
+          <a class="btn btn-primary"
+             href="https://wa.me/254735271680?text=Hello%20Abdiaziz%20Web%20Solutions,%20I%20would%20like%20a%20free%20quote.">
+             💬 Get a Free Quote
+          </a>
+
+          <a class="btn btn-outline"
+             href="tel:+254735271680">
+             📞 Call +254 735 271 680
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-card">
+
+        <h3>Why businesses choose us</h3>
+
+        <ul>
+          <li>Professional modern designs</li>
+          <li>Mobile-friendly websites</li>
+          <li>WhatsApp integration</li>
+          <li>Digital menus & QR codes</li>
+          <li>Affordable packages</li>
+          <li>Support after launch</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+
+  <section id="services">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <h2>Our Digital Services</h2>
+
+        <p>
+          Everything a small business needs to establish a professional
+          online presence.
+        </p>
+
+      </div>
+
+
+      <div class="grid">
+
+        <div class="card">
+          <div class="icon">🌐</div>
+          <h3>Business Websites</h3>
+          <p>
+            Professional websites for shops, companies, organizations,
+            personal brands and local businesses.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <div class="icon">🍽️</div>
+          <h3>Digital Menus</h3>
+          <p>
+            Mobile-friendly restaurant and hotel menus customers can
+            access instantly from their phones.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <div class="icon">📱</div>
+          <h3>QR Codes</h3>
+          <p>
+            QR codes that connect customers directly to your website,
+            menu, contact details or business information.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <div class="icon">💈</div>
+          <h3>Barbershop Websites</h3>
+          <p>
+            Display your services, prices, location and WhatsApp booking
+            information professionally.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <div class="icon">🏨</div>
+          <h3>Hotel Websites</h3>
+          <p>
+            Showcase rooms, services, location, contacts and other
+            important hotel information.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <div class="icon">🔧</div>
+          <h3>Website Updates</h3>
+          <p>
+            Need to change prices, menus, phone numbers or business
+            information? We can update your website.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PACKAGES -->
+
+  <section id="packages" class="pricing">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <h2>Affordable Packages</h2>
+
+        <p>
+          Start small or choose a complete solution for your business.
+        </p>
+
+      </div>
+
+
+      <div class="grid">
+
+        <div class="card">
+
+          <h3>Starter</h3>
+
+          <div class="price">
+            KSh 2,500
+          </div>
+
+          <p>Perfect for small businesses starting online.</p>
+
+          <ul class="package-list">
+            <li>1-page website</li>
+            <li>Mobile-friendly design</li>
+            <li>Business information</li>
+            <li>WhatsApp contact</li>
+            <li>QR code</li>
+          </ul>
+
+          <a class="btn btn-dark"
+             href="https://wa.me/254735271680?text=Hello,%20I%20am%20interested%20in%20the%20Starter%20package.">
+             Choose Starter
+          </a>
+
+        </div>
+
+
+        <div class="card popular">
+
+          <span class="popular-label">
+            MOST POPULAR
+          </span>
+
+          <h3>Professional</h3>
+
+          <div class="price">
+            KSh 5,000
+          </div>
+
+          <p>
+            A stronger online presence for growing businesses.
+          </p>
+
+          <ul class="package-list">
+            <li>Professional multi-section site</li>
+            <li>WhatsApp integration</li>
+            <li>QR code</li>
+            <li>Business gallery</li>
+            <li>Basic SEO setup</li>
+            <li>Contact section</li>
+          </ul>
+
+          <a class="btn btn-primary"
+             href="https://wa.me/254735271680?text=Hello,%20I%20am%20interested%20in%20the%20Professional%20package.">
+             Choose Professional
+          </a>
+
+        </div>
+
+
+        <div class="card">
+
+          <h3>Business Plus</h3>
+
+          <div class="price">
+            KSh 10,000<small>+</small>
+          </div>
+
+          <p>
+            Custom solutions for businesses needing more features.
+          </p>
+
+          <ul class="package-list">
+            <li>Custom website</li>
+            <li>Advanced sections</li>
+            <li>Digital menu/catalogue</li>
+            <li>Custom design</li>
+            <li>Business-focused features</li>
+            <li>Support</li>
+          </ul>
+
+          <a class="btn btn-dark"
+             href="https://wa.me/254735271680?text=Hello,%20I%20need%20a%20custom%20Business%20Plus%20website.">
+             Request Quote
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHY US -->
+
+  <section class="why">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <h2>Why Work With Abdiaziz Web Solutions?</h2>
+
+        <p>
+          We focus on practical websites that help businesses attract
+          customers and communicate professionally.
+        </p>
+
+      </div>
+
+
+      <div class="why-box">
+
+        <div class="why-item">
+          <div class="why-number">1</div>
+          <div>
+            <h3>Built for Mobile</h3>
+            <p>
+              Your customers can easily view your website using a phone.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="why-item">
+          <div class="why-number">2</div>
+          <div>
+            <h3>Affordable</h3>
+            <p>
+              Professional websites without unnecessarily expensive
+              packages.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="why-item">
+          <div class="why-number">3</div>
+          <div>
+            <h3>WhatsApp Ready</h3>
+            <p>
+              Customers can contact your business directly through
+              WhatsApp.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="why-item">
+          <div class="why-number">4</div>
+          <div>
+            <h3>Local Support</h3>
+            <p>
+              Direct communication through phone and WhatsApp in Garissa.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PORTFOLIO -->
+
+  <section id="portfolio" class="portfolio">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <h2>What We Can Build</h2>
+
+        <p>
+          Professional digital solutions for different types of businesses.
+        </p>
+
+      </div>
+
+
+      <div class="grid">
+
+        <div class="card project">
+
+          <div class="mockup">🏨</div>
+
+          <div class="project-body">
+
+            <span class="tag">HOTEL WEBSITE</span>
+
+            <h3>Malyun Manka Hotel</h3>
+
+            <p>
+              A professional online presence for a local hotel,
+              including services and customer contact information.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="card project">
+
+          <div class="mockup">🍽️</div>
+
+          <div class="project-body">
+
+            <span class="tag">DIGITAL MENU</span>
+
+            <h3>Restaurant Menu</h3>
+
+            <p>
+              A mobile-friendly menu customers can open by scanning
+              a QR code.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="card project">
+
+          <div class="mockup">💈</div>
+
+          <div class="project-body">
+
+            <span class="tag">BARBERSHOP</span>
+
+            <h3>Barbershop Website</h3>
+
+            <p>
+              Showcase services, prices, location and WhatsApp booking
+              information.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- HOW IT WORKS -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <h2>How It Works</h2>
+
+        <p>
+          Getting your business online is simple.
+        </p>
+
+      </div>
+
+
+      <div class="grid">
+
+        <div class="card steps">
+          <div class="number">1</div>
+          <h3>Contact Us</h3>
+          <p>
+            Tell us about your business and what you need.
+          </p>
+        </div>
+
+
+        <div class="card steps">
+          <div class="number">2</div>
+          <h3>We Build</h3>
+          <p>
+            We create your website around your business.
+          </p>
+        </div>
+
+
+        <div class="card steps">
+          <div class="number">3</div>
+          <h3>You Review</h3>
+          <p>
+            Review the website and request changes.
+          </p>
+        </div>
+
+
+        <div class="card steps">
+          <div class="number">4</div>
+          <h3>Go Live 🚀</h3>
+          <p>
+            Your website is published and ready for customers.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TESTIMONIALS -->
+
+  <section class="testimonials">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <h2>What Customers Look For</h2>
+
+        <p>
+          A professional website helps customers quickly understand
+          your business.
+        </p>
+
+      </div>
+
+
+      <div class="grid">
+
+        <div class="card">
+          <div class="stars">★★★★★</div>
+
+          <p class="quote">
+            “I want customers to see my services and contact me easily.”
+          </p>
+
+          <strong>Local Business Owner</strong>
+        </div>
+
+
+        <div class="card">
+          <div class="stars">★★★★★</div>
+
+          <p class="quote">
+            “A QR menu makes it much easier for restaurant customers.”
+          </p>
+
+          <strong>Restaurant Business</strong>
+        </div>
+
+
+        <div class="card">
+          <div class="stars">★★★★★</div>
+
+          <p class="quote">
+            “A professional website makes a small business look more
+            trustworthy.”
+          </p>
+
+          <strong>Growing Business</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section id="about" class="about">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <h2>About Abdiaziz Web Solutions</h2>
+
+        <p>
+          Abdiaziz Web Solutions helps businesses in Garissa and across
+          Kenya establish a professional online presence using affordable
+          digital solutions.
+        </p>
+
+      </div>
+
+
+      <div class="grid">
+
+        <div class="card">
+          <div class="icon">💡</div>
+          <h3>Practical</h3>
+
+          <p>
+            We create websites designed to be useful, simple and easy
+            for customers to navigate.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <div class="icon">💰</div>
+          <h3>Affordable</h3>
+
+          <p>
+            Our packages are designed with small and growing businesses
+            in mind.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <div class="icon">🤝</div>
+          <h3>Local Support</h3>
+
+          <p>
+            Customers can communicate directly through phone and
+            WhatsApp.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICE AREA -->
+
+  <section id="location" class="location-section">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <h2>Our Service Area</h2>
+
+        <p>
+          Based in Garissa and available to serve businesses across Kenya.
+        </p>
+
+      </div>
+
+
+      <div class="location-box">
+
+        <div class="location-info">
+
+          <h3>📍 Garissa, Kenya</h3>
+
+          <p>
+            Abdiaziz Web Solutions serves businesses in Garissa and can
+            also work with customers remotely anywhere in Kenya.
+          </p>
+
+          <div class="location-card">
+
+            <strong>Service Area</strong>
+
+            <span>
+              Garissa, Kenya 🇰🇪
+            </span>
+
+          </div>
+
+          <a
+            class="map-button"
+            href="https://www.google.com/maps/search/?api=1&query=Garissa%2C%20Kenya"
+            target="_blank"
+            rel="noopener">
+            📍 View Garissa on Google Maps
+          </a>
+
+        </div>
+
+
+        <div class="map-visual">
+
+          <div>
+
+            <div class="map-pin">📍</div>
+
+            <h3>Garissa, Kenya</h3>
+
+            <p>
+              Service area — not a physical office.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <h2>Ready to Take Your Business Online?</h2>
+
+        <p>
+          Contact Abdiaziz Web Solutions today and get a free quote.
+        </p>
+
+      </div>
+
+
+      <div class="contact-box">
+
+        <div>
+
+          <div class="contact-item">
+            <strong>📞 Phone</strong>
+            <span>+254 735 271 680</span>
+          </div>
+
+
+          <div class="contact-item">
+            <strong>💬 WhatsApp</strong>
+            <span>+254 735 271 680</span>
+          </div>
+
+
+          <div class="contact-item">
+            <strong>📍 Service Area</strong>
+            <span>Garissa, Kenya</span>
+          </div>
+
+
+          <div class="contact-item">
+            <strong>🇰🇪 Country</strong>
+            <span>Kenya</span>
+          </div>
+
+
+          <div class="buttons" style="margin-top:22px">
+
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/254735271680?text=Hello%20Abdiaziz%20Web%20Solutions,%20I%20would%20like%20a%20free%20quote.">
+              💬 WhatsApp Us
+            </a>
+
+            <a
+              class="btn btn-dark"
+              href="tel:+254735271680">
+              📞 Call Us
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="qr">
+
+          <div>
+
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https%3A%2F%2Fabdiazizali529-droid.github.io%2FAb-Web-Tech%2F"
+              alt="QR code for Abdiaziz Web Solutions website">
+
+            <p style="margin-top:12px;font-weight:800;">
+              Scan to visit Abdiaziz Web Solutions
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+  class="float-wa"
+  href="https://wa.me/254735271680?text=Hello%20Abdiaziz%20Web%20Solutions,%20I%20need%20a%20website."
+  aria-label="Contact Abdiaziz Web Solutions on WhatsApp">
+
+  ☎
+
+</a>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <p>
+      <strong>Abdiaziz Web Solutions</strong>
+      — Professional Web Design & Digital Solutions
+    </p>
+
+    <p>
+      Garissa, Kenya 🇰🇪
+    </p>
+
+    <p>
+      Phone / WhatsApp:
+      +254 735 271 680
+    </p>
+
+    <p style="margin-top:10px;">
+      © 2026 Abdiaziz Web Solutions. All rights reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
